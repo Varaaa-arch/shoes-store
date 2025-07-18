@@ -1,14 +1,32 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Navbar section */
 body {
-    font-family: Arial, sans-serif,ui-sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
-.Navbar {
-    background: #333 ;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    position: sticky;
+    scroll-behavior: smooth;
+}
+header{
+    background: url('https://images.unsplash.com/photo-1633464129147-777bdcc97c1d?q=80&w=1484&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    align-items: center;
+    height: 100vh; 
+    position: relative;
+}
+.Navbar {
+    background: transparent;
+    padding: 0;
+    position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 10;
+    
 }
 .navbar-container {
     display: flex;
@@ -19,12 +37,22 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     height: 60px;
+    font-weight: bold;
 }
 .navbar-brand {
     color: #fff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 1.2em;
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    a:hover{
+        color: aqua;
+        transition: color 0.3s ease;
+    }
 }
 .navbar-menu {
     list-style: none;
@@ -68,6 +96,71 @@ body {
         background: transparent;
         border: none;
         color: #fff;
+        cursor: pointer;
     }
-    background-color: #333;
+    button:hover {
+        color: aqua;
+        transition: color 0.3s ease;
+    }
+}
+
+/* Hero section */
+.hero {
+    color: #fff;
+    text-align: left;
+    padding: 200px 20px 100px;
+    min-height: 10vh; 
+}
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 20px;
+    p {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    p:hover {
+        color: aqua;
+        transition: color 0.3s ease;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-top: 5px;
+        font-weight: 650;
+        color: #fff;
+    }
+    h2:hover {
+        color: aqua;
+        transition: color 0.3s ease;
+    }
+}
+.hero .btn-primary {
+    a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        background: linear-gradient(to right, #fcfdfd, #9ddbf3); 
+        padding: 12px 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 999px;
+        font-size: 10px;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    a:hover{
+        background: linear-gradient(to right, #9ddbf3, #fcfcfd);
+        color: black;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* shop section */
+.shop {
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #f9f9f9;
 }
