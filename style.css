@@ -1,6 +1,5 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 /* Navbar section */
 body {
     font-family: 'Inter', sans-serif;
@@ -50,7 +49,7 @@ header{
         transition: color 0.3s ease;
     }
     a:hover{
-        color: aqua;
+        color: #4B3621;
         transition: color 0.3s ease;
     }
 }
@@ -74,7 +73,7 @@ header{
 }
 .navbar-menu {
     li a:hover {
-        color: aqua;
+        color: #4B3621;
         transition: color 0.3s ease;
     }
     li a::after {
@@ -84,7 +83,7 @@ header{
         bottom: 0;
         width: 0%;
         height: 2px;
-        color: aqua;
+        color: #4B3621;
         transition: width 0.3s ease;
     }
     li a:hover::after {
@@ -99,7 +98,7 @@ header{
         cursor: pointer;
     }
     button:hover {
-        color: aqua;
+        color: #4B3621;
         transition: color 0.3s ease;
     }
 }
@@ -121,7 +120,7 @@ header{
         font-weight: 500;
     }
     p:hover {
-        color: aqua;
+        color: #4B3621;
         transition: color 0.3s ease;
     }
     h2 {
@@ -131,7 +130,7 @@ header{
         color: #fff;
     }
     h2:hover {
-        color: aqua;
+        color: #4B3621;
         transition: color 0.3s ease;
     }
 }
@@ -140,7 +139,7 @@ header{
         text-decoration: none;
         color: black;
         display: inline-block;
-        background: linear-gradient(to right, #fcfdfd, #9ddbf3); 
+        background: linear-gradient(to right, #fcfdfd, #4B3621); 
         padding: 12px 20px;
         margin-top: 10px;
         margin-left: 20px;
@@ -151,7 +150,7 @@ header{
         transition: all 0.3s ease;
     }
     a:hover{
-        background: linear-gradient(to right, #9ddbf3, #fcfcfd);
+        background: linear-gradient(to right, #4B3621, #fcfcfd);
         color: black;
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -162,5 +161,71 @@ header{
 .shop {
   min-height: 100vh;
   padding: 50px;
-  background-color: #f9f9f9;
+  background-color: #A89F91;
+  svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+.shop h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #2E2E2E;
+}
+.shop .sepatu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .sepatu-item {
+        background: #4B3621;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .sepatu-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+    .sepatu-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .sepatu-item {
+        h3 {
+            font-size: 1.15em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        p {
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 600;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #4B3621;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+        }
+    }
 }
