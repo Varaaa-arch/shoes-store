@@ -185,10 +185,11 @@ header{
     .sepatu-item {
         background: #4B3621;
         border-radius: 10px;
-        padding: 20px;
+        padding: 13px;
         text-align: center;
         color: #fff;
-        width: 200px;
+        width: 280px;
+        height: auto;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
     }
@@ -206,26 +207,49 @@ header{
     .sepatu-item {
         h3 {
             font-size: 1.15em;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: #fff;
+            text-align: left;
         }
-        p {
-            font-size: 0.9em;
+        .desc {
+            font-size: 0.7em;
+            color: #F8F8F8;
             margin-bottom: 15px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .harga {
+            font-size: 0.8em;
             color: #fff;
             font-weight: 600;
+            align-items: left;
+            text-align: left;
+
         }
         .btn {
             display: inline-block;
-            padding: 12px 20px;
-            background-color: #4B3621;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
+            padding: 8px 8px;
+            color: #4B3621;
+            background-color: #F5EBDD;
+            font-size: 10px;
+            font-weight: 800;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
-            
+            border: none;
+            outline: none;
         }
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 82px;
+        }
+    }
+    .btn:hover {
+        background-color: #4B3621;
+        color: #F5EBDD;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     }
 }
