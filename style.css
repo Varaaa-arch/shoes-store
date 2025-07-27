@@ -259,7 +259,6 @@ header{
     min-height: 100vh;
     background-color: #cfc0aa;
     padding: 2rem;
-    border-radius: 16px;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -316,7 +315,7 @@ header{
 /* Review Card */
 .review-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
     padding: 2rem;
     max-width: 1000px;
