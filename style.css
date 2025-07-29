@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -159,23 +160,23 @@ header{
 
 /* shop section */
 .shop {
-  min-height: 100vh;
-  padding: 50px;
-  background-color: #A89F91;
-  svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #A89F91;
+    svg {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+}
 }
 .shop h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  font-size: 2em;
-  color: #2E2E2E;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #2E2E2E;
+    text-align: center;
 }
 .shop .sepatu {
     display: flex;
@@ -428,24 +429,146 @@ header{
     }
 }
 .social-links {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 1.5rem;
-
-  a {
-    text-decoration: none;
-    color: #4B3621;
-    margin: 0;
-    transition: all 0.3s ease;
-    display: inline-block;
-    padding: 0.5rem;
-    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    a {
+        color: #4B3621;
+        margin: 0;
+        transition: all 0.3s ease;
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 10px;
+        text-decoration: none;
 
     &:hover {
-      color: #fff;
-      background-color: #4B3621;
-      transform: scale(1.2);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: #4B3621;
+        transform: scale(1.2);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        color: #fff;
     }
-  }
+}
+}
+
+/* Footer */
+.footer {
+    background-color: #7A5E3E;
+    color: #ecf0f1;
+    font-family: 'Poppins', sans-serif;
+    padding: 3rem 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-section h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #F5E9DA;
+}
+
+.footer-section.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #bdc3c7;
+}
+
+.footer-section.link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.link ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section.link ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section.link ul li a:hover {
+    color: #D2B48C;
+}
+
+.footer-section.social .social-icon {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-section.social .social-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #F5E9DA;
+    color: #1e2a38;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section.social .social-icon a:hover {
+    transform: translateY(-5px);
+    background-color: #7A5E3E;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-section.social .social-icon a i {
+    font-size: 1.4rem;
+}
+
+.copyright {
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #7A5E3E;
+    color: #F5E9DA; 
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(245, 233, 218, 0.3);
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #bdc3c7;
+}
+
+/* custom */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+::-webkit-scrollbar-track {
+    background: #EED8C4; 
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #7A5E3E, #4B3621);
+    border-radius: 8px;
+    border: 2px solid #EED8C4; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #4B3621, #7A5E3E);
 }
